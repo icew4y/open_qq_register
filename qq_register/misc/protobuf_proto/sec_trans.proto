@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package sec_trans;
+message SecTransInfo{
+	optional bytes str_phone_brand = 1;
+	optional bytes str_model_type = 2;
+	optional bytes str_wifi_mac = 3;
+	optional bytes str_bssid = 4;
+	optional bytes str_os_language = 5;
+	optional uint32 uint32_qq_language = 6;
+	optional bytes str_gps_location = 7;
+}

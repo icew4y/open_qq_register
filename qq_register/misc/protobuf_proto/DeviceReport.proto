@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+message DeviceReport{
+	optional bytes bytes_bootloader = 1;
+	optional bytes bytes_version = 2;
+	optional bytes bytes_codename = 3;
+	optional bytes bytes_incremental = 4;
+	optional bytes bytes_fingerprint = 5;
+	optional bytes bytes_boot_id = 6;
+	optional bytes bytes_android_id = 7;
+	optional bytes bytes_baseband = 8;
+	optional bytes bytes_inner_ver = 9;
+}

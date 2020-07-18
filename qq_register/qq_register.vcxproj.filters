@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="packer">
+      <UniqueIdentifier>{7eb25cbd-ef86-4b13-b670-b9f17b1f7b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{80c154ea-1dde-4c10-883d-4bd9eedfa410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{b042d4a3-d526-4867-bb1b-924bfe890880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps">
+      <UniqueIdentifier>{79329d89-a133-43de-85df-d2c720fc902e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\tea">
+      <UniqueIdentifier>{f951c5a2-f720-4207-a6c5-6e535f9a4969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\md5">
+      <UniqueIdentifier>{b08b0070-a17c-46b8-b095-dd0ca2d37ae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\tlv">
+      <UniqueIdentifier>{3aa8f285-f7ec-41c8-9546-5253df67fcf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\protobuf_proto">
+      <UniqueIdentifier>{67be2aac-8442-4df7-96e1-2fa663760a03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\zlib">
+      <UniqueIdentifier>{ce1bb01f-7c80-45dc-8f05-7b4b64c57c9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\tlvtype">
+      <UniqueIdentifier>{0fba4e3c-ebfc-40a5-acc8-56fd45eee883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\jce">
+      <UniqueIdentifier>{95a3778d-9207-48a0-99ce-44a3c13e99a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\tarsproto">
+      <UniqueIdentifier>{579efc35-0979-43dd-9abf-303f4c006421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\tarsproto\tup">
+      <UniqueIdentifier>{84dcdbc4-4cfc-4448-8aa3-e4a167b65f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\cJSON">
+      <UniqueIdentifier>{b532f804-dceb-4d4b-a0b4-65bd2a6bf9f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="packer\packer.cpp">
+      <Filter>packer</Filter>
+    </ClCompile>
+    <ClCompile Include="net\net.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tea\Tea.cpp">
+      <Filter>deps\tea</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\md5\md5.cpp">
+      <Filter>deps\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tlv\tlv.cpp">
+      <Filter>deps\tlv</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tlv\tlv_box.cpp">
+      <Filter>deps\tlv</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\bufutil.cpp">
+      <Filter>deps</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\protobuf_proto\sec_trans.pb.cc">
+      <Filter>misc\protobuf_proto</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\qqecdh.cpp">
+      <Filter>deps</Filter>
+    </ClCompile>
+    <ClCompile Include="packer\pack_resolver.cpp">
+      <Filter>packer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\strutil.cpp">
+      <Filter>deps</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\sms_plaform.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\adler32.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\compress.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\crc32.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\deflate.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\gzclose.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\gzlib.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\gzread.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\gzwrite.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\infback.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\inffast.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\inflate.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\inftrees.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\trees.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\uncompr.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\zlib\zutil.c">
+      <Filter>deps\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\tlvtype\tlv_t.cpp">
+      <Filter>misc\tlvtype</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\protobuf_proto\DeviceReport.pb.cc">
+      <Filter>misc\protobuf_proto</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\EdUrlParser.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\web_ecdh.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\jce\Jce_c.c">
+      <Filter>deps\jce</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\jce\wup_c.c">
+      <Filter>deps\jce</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\cJSON\cJSON.c">
+      <Filter>deps\cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\cJSON\cJSON_Utils.c">
+      <Filter>deps\cJSON</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="packer\packer.h">
+      <Filter>packer</Filter>
+    </ClInclude>
+    <ClInclude Include="net\net.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\tea\Tea.h">
+      <Filter>deps\tea</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\md5\md5.h">
+      <Filter>deps\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\tlv\tlv.h">
+      <Filter>deps\tlv</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\tlv\tlv_box.h">
+      <Filter>deps\tlv</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>deps</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\bufutil.h">
+      <Filter>deps</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\context.h">
+      <Filter>deps</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\protobuf_proto\sec_trans.pb.h">
+      <Filter>misc\protobuf_proto</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\qqecdh.h">
+      <Filter>deps</Filter>
+    </ClInclude>
+    <ClInclude Include="packer\pack_resolver.h">
+      <Filter>packer</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\strutil.h">
+      <Filter>deps</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\sms_plaform.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\zlib\crc32.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\zlib\deflate.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\zlib\gzguts.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\zlib\inffast.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\zlib\inffixed.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\zlib\inflate.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\zlib\inftrees.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\zlib\trees.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\zlib\zconf.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\zlib\zlib.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\zlib\zutil.h">
+      <Filter>deps\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t106.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t18.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t_example.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t1.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t116.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t100.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t107.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t108.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t142.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t144.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t109.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t52d.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\protobuf_proto\DeviceReport.pb.h">
+      <Filter>misc\protobuf_proto</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t124.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t128.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t16e.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t145.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t147.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t154.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t141.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t8.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t511.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t187.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t188.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t191.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t202.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t177.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t516.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t521.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t525.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t536.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t545.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t544.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t146.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t104.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t192.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\slide_recogn.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t193.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t547.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\EdUrlParser.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t105.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t194.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\web_ecdh.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\jce\Jce.h">
+      <Filter>deps\jce</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\jce\Jce_c.h">
+      <Filter>deps\jce</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\jce\JceDisplayer.h">
+      <Filter>deps\jce</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\jce\JceType.h">
+      <Filter>deps\jce</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\jce\wup_c.h">
+      <Filter>deps\jce</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tarsproto\KQQ_ProfileService_ProfileServantObj.h">
+      <Filter>misc\tarsproto</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tarsproto\mqq_IMService_FriendListServiceServantObj.h">
+      <Filter>misc\tarsproto</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tarsproto\SvcReqRegister.h">
+      <Filter>misc\tarsproto</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tarsproto\RequestF.h">
+      <Filter>misc\tarsproto\tup</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tarsproto\tup.h">
+      <Filter>misc\tarsproto\tup</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tarsproto\TarsType.h">
+      <Filter>misc\tarsproto\tup</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tarsproto\TarsDisplayer.h">
+      <Filter>misc\tarsproto\tup</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tarsproto\Tars.h">
+      <Filter>misc\tarsproto\tup</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t119.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t16a.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t148.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t153.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t166.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\cJSON\cJSON.h">
+      <Filter>deps\cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\cJSON\cJSON_Utils.h">
+      <Filter>deps\cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t401.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t402.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\tlvtype\tlv_t403.h">
+      <Filter>misc\tlvtype</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="misc\tarsproto\KQQ_ConfigService_ConfigServantObj.tars">
+      <Filter>misc\tarsproto</Filter>
+    </None>
+    <None Include="misc\tarsproto\KQQ_ProfileService_ProfileServantObj.tars">
+      <Filter>misc\tarsproto</Filter>
+    </None>
+    <None Include="misc\tarsproto\mqq_IMService_FriendListServiceServantObj.tars">
+      <Filter>misc\tarsproto</Filter>
+    </None>
+    <None Include="misc\tarsproto\SvcReqRegister.tars">
+      <Filter>misc\tarsproto</Filter>
+    </None>
+  </ItemGroup>
+</Project>

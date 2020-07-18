@@ -1,0 +1,95 @@
+module mqq_IMService_FriendListServiceServantObj{
+	//GetUserAddFriendSettingReq 拉取验证消息
+	struct GetUserAddFriendSettingReq{
+		0 require long selfqq;
+		1 require long add_qq;
+		2 require int unknow2;//3020
+		3 require int unknow3;//0
+		5 require byte unknow5;//1
+	};
+	
+	struct GetUserAddFriendSettingRsp{
+		0 require long selfqq;
+		1 require long add_qq;
+		2 require byte verifytype_int;//1,需要验证信息，回答问题情况下是3, 回答问题并由我来确认是4
+		3 require vector<string> questions;
+		4 require int unknow4;//0
+		5 require int unknow5;//0
+		6 require vector<byte> unknow6;
+		7 require int unknow7;//0
+		8 require vector<byte> unknow8;
+	};
+	
+	
+	//GetAutoInfoReq
+	
+	struct GetAutoInfoReq{
+		0 require long selfqq;
+		1 require long add_qq;
+		2 require byte verifytype_int;//1,需要验证信息，回答问题情况下是3, 回答问题并由我来确认是4
+		3 require int unknow3;//3020
+		4 require int unknow4;//0
+	};
+	
+	struct GetAutoInfoRsp{
+		2 require string unknow2_str;
+		4 require string unknow4_str;
+	};
+	//AddFriendReq 发送加好友请求
+	
+	struct AddFriendReq{
+		0 require long selfqq;
+		1 require long add_qq;
+		2 require byte verifytype_int;//1(验证信息),3(回答问题),4(回答问题并由我来确认, 应答: )
+		/*
+		//逐行 \n
+		问题1:为什么要加我？
+		回答:11111
+		问题2:你现居何处？
+		回答:22222
+		问题3:你多大了？
+		回答:33333
+		*/
+		3 require byte unknow3_int;//1
+		4 require int unknow4_int;//0
+		5 require byte msg_size;//39(验证信息字符串大小)
+		6 require string str_answer_msg;//utf8 问题的答案
+		7 require int unknow7_int;//0
+		8 require byte unknow8_int;//1
+		10 require int unknow10_int;//3020 //3004(从群成员发送请求时)
+		11 require int unknow11_int;//0 //16(从群成员发送请求时)
+		14 optional vector<byte> groupcode; //groupcode(protobuf : 08 EC 91 B4 D7 07 )
+		15 require int unknow15_int;//0
+		16 optional vector<byte> groupmem_name; //群成员的昵称 utf-8
+		18 require int unknow18_int;//0
+	};
+	
+	struct AddFriendRsp{
+		0 require long selfqq;
+		1 require long add_qq;
+		2 require byte verifytype_int;//1(验证信息),3(回答问题),4(回答问题并由我来确认, 应答: )
+	};
+	
+	/*
+	例子(回答正确的答案的返回，请求的时候填入的是错误的答案)
+	10 03 2c 3c 42 13 1b 88 27 56 29 6d 71 71 2e 49
+	4d 53 65 72 76 69 63 65 2e 46 72 69 65 6e 64 4c
+	69 73 74 53 65 72 76 69 63 65 53 65 72 76 61 6e
+	74 4f 62 6a 66 0c 41 64 64 46 72 69 65 6e 64 52
+	65 71 7d 00 00 32 08 00 01 06 06 41 46 52 45 53
+	50 1d 00 00 23 0a 03 00 00 00 00 a6 fd d1 36 12
+	76 9a 4c 33 20 03 30 01 4c 60 01 7c 86 00 9d 00
+	0c ad 00 0c bd 00 0c 0b 8c 98 0c a8 0c 
+	
+	
+	需要验证信息，对方同意
+	10 03 2C 3C 42 0A 03 B9 55 56 29 6D 71 71 2E 
+	49 4D 53 65 72 76 69 63 65 2E 46 72 69 65 6E 64 
+	4C 69 73 74 53 65 72 76 69 63 65 53 65 72 76 61 
+	6E 74 4F 62 6A 66 0C 41 64 64 46 72 69 65 6E 64 
+	52 65 71 7D 00 00 31 08 00 01 06 06 41 46 52 45 
+	53 50 1D 00 00 22 0A 03 00 00 00 00 A6 FD D1 36 
+	12 76 9A 4C 33 20 01 30 01 4C 6C 7C 86 00 9D 00 
+	0C AD 00 0C BD 00 0C 0B 8C 98 0C A8 0C 
+	*/
+};

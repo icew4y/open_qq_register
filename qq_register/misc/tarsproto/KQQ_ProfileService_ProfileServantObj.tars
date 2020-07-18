@@ -1,0 +1,40 @@
+module KQQ_ProfileService_ProfileServantObj{
+	struct GroupMngReq_AddGroup{
+		0 require byte action;
+		1 require long selfqq;
+		2 require vector<byte> extra_msg;
+		3 require int unknow3;
+		4 require string unknow4;
+		5 require int unknow5;
+		6 require int unknow6;//3
+		7 require int unknow7;//31
+		8 require int unknow8;
+		9 require int unknow9;
+		10 require int unknow10;
+		12 require string unknow12;
+		13 require vector<byte> pb_msg;
+	};
+	
+	struct GroupMngReq_ExitGroup{
+		0 require byte action; //1 加群 2 退群
+		1 require long selfqq;
+		2 require vector<byte> extra_msg;//附加消息 例如加群的protobuf
+		3 require int unknow3;
+		4 require string unknow4;
+		5 require int unknow5;
+		6 require int unknow6;//0
+		7 require int unknow7;//0
+		8 require int unknow8;
+		9 require int unknow9;
+		10 require int unknow10;
+		11 require string unknow11;
+		12 require string unknow12;
+		14 require string unknow14;
+		15 require string unknow15;
+		16 require int unknow16;
+	};
+	
+	
+
+};
+

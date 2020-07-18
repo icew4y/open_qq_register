@@ -1,0 +1,17 @@
+module KQQ_ProfileService_ConfigServantObj{
+
+	struct unknow_struct{
+		1 require int unknow;
+	};
+	
+	struct SDKConfReq{
+		1 require int unknow;
+		2 require int timestamp1;
+		3 require vector<unknow_struct> unknow2;
+		4 require int unknow3;
+		5 require int timestamp2;
+	};
+	
+
+};
+

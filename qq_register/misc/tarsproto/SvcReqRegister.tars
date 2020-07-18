@@ -1,0 +1,27 @@
+module PushService_SvcReqRegister{
+	struct SvcReqRegister{
+		0 require long selfqq;
+		1 require int biztype;
+		2 require int unknow2;
+		3 require string unknow3;
+		4 require int what_action;
+		5 require int unknow5;
+		6 require int unknow6;
+		7 require int unknow7;
+		8 require int unknow8;
+		9 require int unknow9;
+		10 require int unknow10;
+		11 require int unknow11;//19
+		12 require int unknow12;//1
+		13 require string unknow13;//
+		14 require int unknow14;
+		16 require vector<byte> imeimac_md5;
+		17 require int unknow17;
+		18 require int unknow18;
+		19 require string phone_model;
+		20 require string phone_model_real;
+		21 require string android_version;
+		22 require int unknow22;
+		23 require int unknow23;
+	};
+};
